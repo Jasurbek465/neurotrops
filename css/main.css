@@ -527,13 +527,13 @@ color: black;
 }
 .mount{
   position: absolute;
-  top: -455px;
+  top: -326px;
   right: 0;
   z-index: -1;
 }
 .container .h1-img{
   position: absolute;
-    top: -373px;
+    top: -246px;
     right: 139px;
   z-index: -2;
   color: #FFFFFF;
@@ -545,7 +545,7 @@ text-transform: uppercase;
 }
 .img-sky{
   position: absolute;
-  top: -1134px;
+  top: -1010px;
   right: 0;
   z-index: -3;
 
@@ -1136,3 +1136,15 @@ box-shadow: 0px 0px 32px 0px #CFEE13BF;
 }
 
   /* footer */
+
+
+  /* media queris atart */
+  @media (max-width: 1260px) {
+    
+    .container {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+  }
