@@ -48,6 +48,7 @@ body {
   font-weight: 300;
   line-height: 160%;
   color: #fff;
+  overflow-x: hidden;
   /* background-color: #000; */
   /* overflow-x:hidden; */
 }
@@ -482,20 +483,29 @@ body {
 }
 
 .cart-item .img-box {
-  width: 360px;
+  width: 100%;
   height: 360px;
-  min-width: 320px;
+  /* min-width: 320px; */
   max-width: 704px;
   gap: 10px;
   border-radius: 10px;
   box-sizing: border-box;
   overflow: hidden;
   position: relative;
+
+  overflow: hidden;
+  /* rasm ortig‘i ko‘rinmasin */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cart-item .img-box .cart-product {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  /* rasmni to‘ldirib, kesadi */
+  object-position: center;
 }
 
 .cart-item .img-box .heart-icon {
@@ -784,7 +794,7 @@ body {
 
 .products .container {
   position: relative;
-  padding: 40px 0 137px 0;
+  padding: 40px 140px 137px 140px;
 }
 
 .products .product {
@@ -812,6 +822,7 @@ body {
 }
 
 .products .product .btns {
+  padding-inline: 140px;
   position: absolute;
   left: 0;
   bottom: -50%;
@@ -924,6 +935,10 @@ body {
   /* height: 32px; */
   cursor: pointer;
   font-size: 16px;
+}
+
+.mahsulot-quti {
+  display: none;
 }
 
 .review-card h3 {
@@ -1239,6 +1254,12 @@ body {
 .footer-bottom img {
   height: 30px;
 }
+.footer-mobile {
+  display: none;
+}
+.footer-desktop {
+  display: block;
+}
 
 /* footer */
 
@@ -1397,22 +1418,461 @@ body {
     letter-spacing: 0%;
 
   }
-  .swiper-slide .first-btn{
+
+  .swiper-slide .first-btn {
     width: 100%;
     margin-bottom: 20px;
   }
-  .swiper-slide .second-btn{
+
+  .swiper-slide .second-btn {
     width: 100%;
   }
+
   .swiper-horizontal>.swiper-pagination-bullets,
-   .swiper-pagination-bullets.swiper-pagination-horizontal,
-    .swiper-pagination-custom,
-     .swiper-pagination-fraction {
-      position: absolute;
-      left: 0;
-      bottom: -40px;
-     }
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+  }
+
   /* intro */
+  /* nimadir */
+  /* nimadir */
+  .nimadir .title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 160%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+
+  }
+
+  .tabs {
+    overflow: auto;
+    scrollbar-width: none;
+  }
+
+  .tabs-box .tabs .tab-item {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 0%;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+
+  }
+
+  .img-box {
+    position: relative;
+  }
+
+  .mahsulot-quti {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+  }
+
+  /* nimadir */
+  /* butun-malumot */
+  .mahsulot {
+    /* display: none; */
+    margin: 0;
+    background-color: #000;
+    padding: 20px;
+  }
+
+  .mahsulot .img-logo {
+    width: 240px;
+    height: 205px;
+    top: 40px;
+    right: -20px;
+  }
+
+  .mahsulot .malumot .malumot-h1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 160%;
+    text-transform: uppercase;
+
+  }
+
+  .mahsulot .malumot span {
+    font-family: 'Aeroport';
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 160%;
+
+  }
+
+  .mahsulot .malumot p {
+    font-family: 'Aeroport';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 160%;
+
+  }
+
+  .salom h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 160%;
+    text-transform: uppercase;
+    margin-top: 60px;
+    padding-bottom: 20px;
+  }
+
+  .mount {
+    width: 100%;
+    top: -170px;
+  }
+
+  .container .h1-img {
+    position: absolute;
+    top: -165px;
+    right: 37px;
+    z-index: -2;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 63px;
+    line-height: 100%;
+    text-transform: uppercase;
+  }
+
+  .img-sky {
+    width: auto;
+  }
+
+  .container .company {
+    padding: 0 !important;
+    padding-inline: 20px !important;
+  }
+
+  .container .company .sarlavha h1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 160%;
+    text-transform: uppercase;
+
+  }
+
+  .container .company span {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 160%;
+
+  }
+
+  .hello-p {
+    margin: 0 !important;
+  }
+
+  .salom {
+    padding-inline: 20px;
+  }
+
+  .salom h1 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 160%;
+    text-transform: uppercase;
+    color: var(--yellowgreen);
+    padding-top: 20px;
+    margin-bottom: 0;
+  }
+
+  /* butun-malumot */
+  /* products */
+  .products .product {
+    width: auto;
+  }
+
+  .products .container {
+    padding: 20px;
+  }
+
+  .product .container h2 {
+    font-family: 'TT Autonomous Trl';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 160%;
+    text-transform: uppercase;
+    margin-inline: auto;
+  }
+
+  .product .container p {
+    display: none;
+  }
+
+  .product .container .btns {}
+
+  /* products */
+  /* reviews-section */
+  .reviews-section h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 160%;
+    text-transform: uppercase;
+
+  }
+
+  .reviews-section .subtext {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 160%;
+    margin-bottom: 20px;
+
+  }
+
+  .swiper .swiper-wrapper .swiper-slide {
+    margin: 0;
+    padding: 0;
+  }
+
+  .reviews-section {
+    padding: 20px;
+  }
+
+  .review-card h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 160%;
+    text-transform: uppercase;
+
+  }
+
+  .review-card .date {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 160%;
+    text-transform: uppercase;
+    /* color: linear-gradient(144.7deg, #F7F7F7 10.78%, #BCBCBC 93.37%); */
+
+  }
+  .reviews-section .swiper-wrapper {
+    padding-bottom: 60px !important;
+    z-index: 1;
+  }
+  .reviews-section .swiper-pagination{
+    z-index: 2;
+    bottom: 0;
+  }
+  .swiper-wrapper .swiper-slide p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 160%;
+
+  }
+  .product .btns{
+    bottom: -70px !important;
+    padding-inline: 0 !important;
+  }
+  .products .product:hover .btns{
+    bottom: -23px;
+  }
+  .product .btns .btn.one {
+    border-radius: 50px;
+    bottom: -30px;
+  }
+
+  /* reviews-section */
+  /* faq-section */
+  .faq-section{
+    padding: 20px;
+  }
+  .faq-section h2{
+font-weight: 700;
+font-size: 24px;
+line-height: 160%;
+text-transform: uppercase;
+margin-bottom: 10px;
+
+  }
+  .faq-section .subtext{
+font-weight: 300;
+font-size: 20px;
+line-height: 160%;
+margin-bottom: 20px;
+  }
+  .faq-list li{
+font-weight: 700;
+font-size: 18px;
+line-height: 160%;
+text-transform: uppercase;
+display: flex;
+justify-content: space-between;
+margin-bottom: 40px;
+
+  }
+  /* faq-section */
+  /* contact-section */
+  .contact-section{
+    padding: 20px 20px 40px 20px;
+  }
+  .contact-section h2{
+     font-family: 'TT Autonomous Trl';
+font-weight: 700;
+font-size: 24px;
+line-height: 160%;
+text-transform: uppercase;
+
+  }
+  .contact-section .subtext{
+    font-family: 'Aeroport';
+font-weight: 300;
+font-size: 20px;
+line-height: 160%;
+
+  }
+  .contact-form input::placeholder {
+    color: #FFFFFF;
+    opacity: 25%;
+  }
+  .contact-form small{
+    font-family: 'Aeroport';
+font-weight: 300;
+font-size: 18px;
+line-height: 160%;
+
+  }
+  .policy-text{
+
+    font-family: 'Aeroport';
+font-weight: 300;
+font-size: 16px;
+line-height: 160%;
+
+  }
+  /* contact-section */
+  /* footer */
+ 
+   .footer-desktop {
+    display: none;
+  }
+  .footer-mobile {
+    display: block;
+  }
+  .footer-mobile .container{
+      margin: 0;           /* markazlashuv yo‘q */
+  max-width: 100%;     /* kenglik to‘liq */
+  padding: 0;  
+  }
+
+  .footer-mobile {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: "Aeroport", sans-serif;
+    /* text-align: center; */
+  }
+
+  .footer-mobile .footer-logo {
+    width: 75px;
+    height: 64px;
+    margin-bottom: 10px;
+  }
+
+  .footer-mobile .footer-brand {
+    font-family: 'TT Autonomous Trl';
+font-weight: 700;
+font-size: 18px;
+line-height: 160%;
+text-transform: uppercase;
+
+  }
+
+  .footer-mobile .footer-slogan {
+    color: #b6ff01;
+    font-family: 'TT Autonomous Trl';
+font-weight: 700;
+font-size: 24px;
+line-height: 160%;
+text-transform: uppercase;
+
+  }
+
+  .footer-mobile .footer-join {
+    margin: 16px 0 10px;
+    font-family: 'TT Autonomous Trl';
+font-weight: 700;
+font-size: 16px;
+line-height: 160%;
+
+  }
+
+  .footer-mobile .footer-socials a img {
+    width: 48px;
+    height: 48px;
+    margin: 0 8px 0 0;
+  }
+
+  .footer-mobile .footer-phone,
+  .footer-mobile .footer-email {
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 10px;
+    font-family: 'Aeroport';
+font-weight: 300;
+font-size: 16px;
+line-height: 160%;
+
+  }
+
+  .footer-mobile-links {
+    margin: 20px 0;
+  }
+
+  .footer-mobile-links .footer-column {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-mobile-links .footer-column h4 {
+    margin-bottom: 8px;
+    font-family: 'TT Autonomous Trl';
+font-weight: 700;
+font-size: 24px;
+line-height: 160%;
+text-transform: uppercase;
+
+  }
+
+  .footer-mobile-links .footer-column a {
+    display: block;
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 4px;
+  }
+
+  .footer-mobile .footer-bottom {
+    /* border-top: 1px solid #b6ff01; */
+    margin-top: 20px;
+    padding-top: 15px;
+    font-size: 12px;
+    color: #b6ff01;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    align-items: start;
+  }
+
+  .footer-mobile .footer-bottom img {
+    height: 28px;
+    text-align: left !important;
+  }
+  .footer-bottom p{
+    font-family: 'Aeroport';
+font-weight: 300;
+font-size: 16px;
+line-height: 160%;
+
+  }
+
+  /* footer */
 
   .cart-item .img-box .cart-product {
     width: auto;
